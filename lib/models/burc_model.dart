@@ -7,6 +7,7 @@
   String _burcBuyukResim;
  String get burcAdi => _burcAdi;
 
+
  
 
   Burc(this._burcAdi,this._burcBuyukResim,this._burcDetayi,this._burcKucukResim,this._burcTarihi);
@@ -28,12 +29,5 @@ set burcAdi(String value) => _burcAdi = value;
  String get burcBuyukResim => _burcBuyukResim;
 
  set burcBuyukResim(String value) => _burcBuyukResim = value;
-
- 
-
-
-   
-
-
 
  }
