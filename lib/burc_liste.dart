@@ -23,7 +23,7 @@ class BurcListe extends StatelessWidget {
       String kucukResim =
           Strings.BURC_ADLARI[i].toLowerCase() + "${i + 1}" + ".png";
       String buyukResim =
-          Strings.BURC_ADLARI[i] + "_buyuk" + "${i + 1}" + "png";
+          Strings.BURC_ADLARI[i].toLowerCase() + "_buyuk" + "${i + 1}" + ".png";
 
       Burc eklenecekBurc = Burc(
           Strings.BURC_ADLARI[i],
@@ -55,7 +55,7 @@ class BurcListe extends StatelessWidget {
       elevation: 5,
       child: ListTile(
         onTap: (){
-            Navigator.pushNamed(context, "/burcum/$index");
+           Navigator.pushNamed(context, "/burcum/$index");
         },
         leading: Image.asset("images/"+oanlistelenen.burcKucukResim),
         title: Text(
@@ -77,40 +77,3 @@ class BurcListe extends StatelessWidget {
     );
   }
 }
-
-
-/*class HataSayfasi extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Hata Sayfası"),
-        backgroundColor: Colors.red,
-      ),
-      
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            
-           
-             Container(
-                child: Text("Hatalı tıklama yaptınız. Liste manüsünden uygun seçeneği seçiniz"),
-              ),
-           
-            RaisedButton(child: 
-            Text("Liste Sayfasına Dön"),
-            onPressed: (){
-              Navigator.pushNamed(context, "/");
-
-
-            },
-            )
-          ],
-        ),
-      ),
-    );
-  }
-  */
-

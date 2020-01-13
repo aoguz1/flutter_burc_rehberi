@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:burc_rehberi/burc_liste.dart';
 import 'package:flutter/material.dart';
 
